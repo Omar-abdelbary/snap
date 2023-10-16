@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Autour One', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+body {
+    height: 945px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    
+
+}
+
+header nav {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+header nav .logo h1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(114,108,238);
+
+}
+
+header nav ul {
+    margin-top: 25px;
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0px 15px;
+}
+
+header nav ul li a {
+    color: rgb(114,108,238);
+    font-size: 18px;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: rgb(114,108,238);
+    text-decoration: none;
+}
+
+header nav .btn {
+    background-color: rgb(114,108,238) ;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+header nav .btn:hover {
+    color: #fff;
+}
+
+
+
+header nav .toggle-menu {
+    display: none;
+}
+
+header nav .toggle-menu i {
+    margin-top: 30px;
+    font-size: 22px;
+    color: rgb(114,108,238);
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+header nav .drop {
+    position: relative;
+}
+
+
+header nav .list-2 {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    left: 0;
+    
+    flex-direction: column;
+    background-color: rgb(238,238,238);
+    width: 100%;
+    z-index: 777777777777777;
+}
+
+header nav .list-2 li {
+    margin: 10px 0px;
+}
+
+header nav .list-2 li:hover {
+    background-color: #fff;
+}
+
+header nav .list-2 li a {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+
+/*  drop three */
+
+header nav .drop-3 {
+    position: relative;
+}
+
+header nav .list-3 {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: rgb(238,238,238);
+    width: 100%;
+    height: auto;
+    z-index: 777777777777777;
+}
+
+header nav .list-3 li {
+    margin: 10px 0px;
+}
+
+header nav .list-3 li:hover {
+    background-color: #fff;
+}
+
+header nav .list-3 li a {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+
+
+
+
+header nav .list-2 li a i {
+    margin-right: 8px;
+}
+
+@media (max-width : 750px) {
+
+    
+
+    header nav {
+        position: relative;
+
+    }
+    
+
+    header nav ul {
+        display: block;
+        position: absolute;
+        flex-direction: column;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-color: rgb(238,238,238);
+        transition: 0.5s;
+        z-index: 888888888888888;
+
+    }
+
+    .show {
+        left: 0;
+        transition: 0.5s;
+    }
+
+    header nav ul li {
+        margin: 20px 0px;
+    }
+
+    header nav .toggle-menu {
+        display: block;
+    }
+
+    /* drop three */
+
+    header nav .list-3 {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+}
+
+/*  ================================================= end nav bar ===================================================== */
+
+
+.main {
+    
+    width: 100%;
+    height: auto;
+}
+
+.main h1 {
+    padding-top: 90px;
+    color: rgb(114,108,238);
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.main p {
+    padding-top: 120px;
+    color: rgb(114,108,238);
+    font-size: 18px;
+}
+
+.main .btn {
+    background-color: rgb(20,20,20);
+    color: #fff;
+    transition: 1s;
+    width: 30%;
+    margin-top: 20px;
+
+
+}
+
+.main .btn:hover {
+    background-color: #fff;
+    color: rgb(20,20,20);
+    border: 1px solid rgb(20,20,20);
+}
+
+.main .owl-carousel {
+    margin-top: 55px;
+}
+
+.main .owl-carousel .item {
+    margin: 0px 8px;
+    cursor: pointer;
+}
+
+.main .img-fluid {
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+}
+
+
+@media (max-width : 750px ) {
+    body {
+        height: 1100px;
+    }
+    .main h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 33px;
+    }
+
+    .main p {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .main .btn {
+        margin-left: 120px;
+        width: 35%;
+        margin-top: 10px;
+    }
+
+    .main .owl-carousel .item {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width :751px) and (max-width :1000px) {
+
+    body {
+        height: 1650px;
+    }
+    .main h1 {
+        padding-top: 30px;
+        font-size: 50px;
+    }
+
+    .main p {
+        padding-top: 20px;
+        font-size: 22px;
+    }
+
+    .main .btn {
+        margin-left: 0px;
+        width: 30%;
+        margin-top: 15px;
+    }
+}
+
+
+/*  ================================================== end main ==================================================== */
+
+.end-content {
+    width: 100%;
+    height: auto;
+}
+
+.end-content h3 {
+    font-size: 18px;
+    color: rgb(114,108,238);
+}
+
+.end-content h4 {
+    font-size: 17px;
+    color: rgb(223,201,43);
+    cursor: pointer;
+}
+
+.end-content h4 a {
+    font-size: 18px;
+    color: rgb(223,201,43);
+    cursor: pointer;
+}
+
+.end-content h4 a:hover {
+    text-decoration: none;
+}
